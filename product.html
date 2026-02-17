@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftCart - Products</title>
+
+  <!-- DaisyUI + Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryColor: "#5B4BFF",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-base-100">
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar bg-white shadow-md px-6 lg:px-16">
+  <div class="flex-1">
+    <a class="text-2xl font-bold text-primaryColor">SwiftCart</a>
+  </div>
+
+  <div class="hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 font-medium">
+      <li><a>Home</a></li>
+      <li><a class="text-primaryColor font-semibold">Products</a></li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="lg:hidden">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost">☰</label>
+      <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li><a>Products</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PAGE TITLE ================= -->
+<section class="py-12 px-6 lg:px-16 text-center">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">Our Products</h1>
+
+  <!-- Category Filters -->
+  <div class="flex flex-wrap justify-center gap-3">
+    <button class="btn btn-sm bg-primaryColor text-white border-none">All</button>
+    <button class="btn btn-sm btn-outline">Electronics</button>
+    <button class="btn btn-sm btn-outline">Jewellery</button>
+    <button class="btn btn-sm btn-outline">Men's Clothing</button>
+    <button class="btn btn-sm btn-outline">Women's Clothing</button>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS GRID ================= -->
+<section class="pb-16 px-6 lg:px-16">
+
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+    <!-- Product Card -->
+    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition">
+      <figure class="px-6 pt-6">
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+          class="rounded-xl h-56 object-contain">
+      </figure>
+      <div class="card-body">
+        <div class="flex justify-between items-center text-sm">
+          <span class="badge badge-primary badge-outline">Men's Clothing</span>
+          <span class="text-yellow-500">⭐ 3.9</span>
+        </div>
+        <h2 class="card-title text-base mt-2">Fjallraven Backpack</h2>
+        <p class="font-bold">$109.95</p>
+
+        <div class="card-actions justify-between mt-3">
+          <button class="btn btn-outline btn-sm">Details</button>
+          <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate Cards (You can repeat / dynamic later) -->
+
+    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition">
+      <figure class="px-6 pt-6">
+        <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+          class="rounded-xl h-56 object-contain">
+      </figure>
+      <div class="card-body">
+        <div class="flex justify-between text-sm">
+          <span class="badge badge-primary badge-outline">Men's Clothing</span>
+          <span class="text-yellow-500">⭐ 4.1</span>
+        </div>
+        <h2 class="card-title text-base mt-2">Premium Slim T-Shirt</h2>
+        <p class="font-bold">$22.30</p>
+        <div class="card-actions justify-between mt-3">
+          <button class="btn btn-outline btn-sm">Details</button>
+          <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition">
+      <figure class="px-6 pt-6">
+        <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+          class="rounded-xl h-56 object-contain">
+      </figure>
+      <div class="card-body">
+        <div class="flex justify-between text-sm">
+          <span class="badge badge-secondary badge-outline">Jewellery</span>
+          <span class="text-yellow-500">⭐ 4.7</span>
+        </div>
+        <h2 class="card-title text-base mt-2">White Gold Ring</h2>
+        <p class="font-bold">$99.99</p>
+        <div class="card-actions justify-between mt-3">
+          <button class="btn btn-outline btn-sm">Details</button>
+          <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition">
+      <figure class="px-6 pt-6">
+        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+          class="rounded-xl h-56 object-contain">
+      </figure>
+      <div class="card-body">
+        <div class="flex justify-between text-sm">
+          <span class="badge badge-accent badge-outline">Electronics</span>
+          <span class="text-yellow-500">⭐ 4.3</span>
+        </div>
+        <h2 class="card-title text-base mt-2">Portable SSD</h2>
+        <p class="font-bold">$64.00</p>
+        <div class="card-actions justify-between mt-3">
+          <button class="btn btn-outline btn-sm">Details</button>
+          <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer p-10 bg-neutral text-neutral-content">
+  <aside>
+    <h3 class="text-xl font-bold">SwiftCart</h3>
+    <p>Your one-stop shop for quality products and fast delivery.</p>
+  </aside>
+
+  <nav>
+    <header class="footer-title">Quick Links</header>
+    <a class="link link-hover">Home</a>
+    <a class="link link-hover">Products</a>
+    <a class="link link-hover">About</a>
+    <a class="link link-hover">Contact</a>
+  </nav>
+
+  <nav>
+    <header class="footer-title">Support</header>
+    <a class="link link-hover">FAQ</a>
+    <a class="link link-hover">Shipping</a>
+    <a class="link link-hover">Returns</a>
+    <a class="link link-hover">Privacy Policy</a>
+  </nav>
+
+  <form>
+    <header class="footer-title">Newsletter</header>
+    <fieldset class="form-control w-80">
+      <div class="join">
+        <input type="text" placeholder="Enter your email"
+          class="input input-bordered join-item">
+        <button class="btn bg-primaryColor text-white join-item border-none">
+          Subscribe
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</footer>
+
+<div class="text-center py-4 bg-neutral text-neutral-content text-sm">
+  © 2025 SwiftCart. All rights reserved.
+</div>
+
+</body>
+</html>
