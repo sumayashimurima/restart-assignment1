@@ -69,6 +69,7 @@
         </div>
       </div>
     </nav>
+
     <!-- hero section -->
 
     <section class="hero min-h-[80vh] bg-opacity-25" style="background-image: url('./Assets/banner-image.png');">
@@ -92,70 +93,124 @@
   </header>
 
   <main class="md:container mx-auto">
-    <section class="md:container mx-auto py-16 px-6 lg:px-16 text-center">
+
+    <section class="py-16 px-6 lg:px-16 text-center">
       <h2 class="text-3xl font-bold mb-3">Why Choose Us</h2>
       <p class="text-gray-500 mb-10">
         We provide the best shopping experience with top-notch services.
       </p>
 
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 z-20">
-        <card class="card start-1 text-justify z-20">
-          <div class="text-3xl pl-10 z-1">
-            <i class="fa-solid fa-car-side"></i>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="card bg-base-100 shadow-md p-6">
+          <div class="text-3xl py-2 px-0 shadow-lg w-0 shadow-gray-500   -mt-10"><i class="fa-solid fa-car-side"></i>
           </div>
-          <div class="card shadow-lg px-5 bg-base-150 text-justify p-6">
-
-            <h3 class="font-semibold text-lg">Fast Delivery</h3>
-            <p class="text-sm text-gray-500 m-3 text-justify">
+          <div class="text-justify mt-5">
+            <h3 class="font-semibold text-lg ">Fast Delivery</h3>
+            <p class="text-sm text-gray-500 mt-2">
               Get your orders delivered quickly and efficiently.
             </p>
           </div>
-        </card>
+        </div>
 
-        <card class="card start-1 text-justify z-20">
-          <div class="text-3xl pl-10 z-1">
-            <i class="fa-regular fa-headphones"></i>
+        <div class="card bg-base-100 shadow-md p-6">
+          <div class="text-3xl py-2 px-0 shadow-lg w-0 shadow-gray-500   -mt-10"><i
+              class="fa-regular fa-headphones"></i>
+
           </div>
-          <div class="card shadow-lg px-5 bg-base-150 text-justify p-6">
-
-            <h3 class="font-semibold text-lg">24/7 Support</h3>
-            <p class="text-sm text-gray-500 m-3 text-justify">
+          <div class="text-justify mt-5">
+            <h3 class="font-semibold text-lg ">24/7 Support</h3>
+            <p class="text-sm text-gray-500 mt-2">
               Our support team is available around the clock.
             </p>
           </div>
-        </card>
+        </div>
 
-
-        <card class="card start-1 text-justify z-20">
-          <div class="text-3xl pl-10 z-1">
-            <i class="fa-solid fa-lock"></i>
+        <div class="card bg-base-100 shadow-md p-6">
+          <div class="text-3xl py-2 px-0 shadow-lg w-0 shadow-gray-500   -mt-10"><i class="fa-solid fa-lock"></i>
           </div>
-          <div class="card shadow-lg px-5 bg-base-150 text-justify p-6">
-
-            <h3 class="font-semibold text-lg">Secure Payment</h3>
-            <p class="text-sm text-gray-500 m-3 text-justify">
+          <div class="text-justify mt-5">
+            <h3 class="font-semibold text-lg ">Secure Payment</h3>
+            <p class="text-sm text-gray-500 mt-2">
               Experience safe and encrypted transactions.
             </p>
           </div>
-        </card>
+        </div>
 
-
-        <card class="card start-1 text-justify z-20">
-          <div class="text-3xl pl-10 z-1">
-            <i class="fa-solid fa-rotate"></i>
+        <div class="card bg-base-100 shadow-md p-6">
+          <div class="text-3xl py-2 px-0 shadow-lg w-0 shadow-gray-500   -mt-10"><i class="fa-solid fa-rotate"></i>
           </div>
-          <div class="card shadow-lg px-5 bg-base-150 text-justify p-6">
-
-            <h3 class="font-semibold text-lg">Easy Returns</h3>
-            <p class="text-sm text-gray-500 m-3 text-justify">
+          <div class="text-justify mt-5">
+            <h3 class="font-semibold text-lg ">Easy Returns</h3>
+            <p class="text-sm text-gray-500 mt-2">
               Return products easily within 30 days when you want.
             </p>
           </div>
-        </card>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- product -->
+    <section class="py-16 px-6 lg:px-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Trending Now</h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Product 1 -->
+        <div class="card bg-base-100 shadow-lg">
+          <figure class="px-6 pt-6">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+              class="rounded-xl h-64 object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="font-semibold">Backpack</h3>
+            <p class="font-bold">$109.95</p>
+            <div class="card-actions justify-between">
+              <button class="btn btn-outline btn-sm">Details</button>
+              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card bg-base-100 shadow-lg">
+          <figure class="px-6 pt-6">
+            <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="rounded-xl h-64 object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="font-semibold">Premium T-Shirt</h3>
+            <p class="font-bold">$22.30</p>
+            <div class="card-actions justify-between">
+              <button class="btn btn-outline btn-sm">Details</button>
+              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card bg-base-100 shadow-lg">
+          <figure class="px-6 pt-6">
+            <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="rounded-xl h-64 object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="font-semibold">Cotton Jacket</h3>
+            <p class="font-bold">$55.99</p>
+            <div class="card-actions justify-between">
+              <button class="btn btn-outline btn-sm">Details</button>
+              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
-    <!-- product -->
+
 
   </main>
 
