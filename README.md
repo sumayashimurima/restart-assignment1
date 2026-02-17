@@ -1,4 +1,30 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT (SwiftCart E-Commerce)
+1.What is the difference between `null` and `undefined`?
+ans:The main difference between `null` and `undefined` is that undefined means not defined yet,its type is undefined and null means define but keep empty purpose fully and null type is object.
+
+2.What is the use of the `map()` function in JavaScript? How is it different from `forEach()`?
+ans:map() is an array method that creates a new array  from each element of a function, and it must return a value and it does not modefy the original array
+other hand forEach() is used for executing a function for each element of a array and it does not return any value and it used for loop 
+
+3.What is the difference between `==` and `===`?
+ans: == is compare only value and if type is diffrent then it convert value and === is compare both value and data type if type is diffrent than give result false
+
+4.What is the significance of `async`/`await` in fetching API data?
+ans:async is significant because it is time-consuming it makes function and return promise but await pauses execution until the Promise return and it improve errer handling using try-catch both handle asynchonous operation
+
+5.Explain the concept of Scope in JavaScript (Global, Function, Block).
+ans:Scope means where a variable can be accessed in a program.
+if a variable declared outside the function and block has global scope.It can be accessed from everywhere in the program.
+if a variable declared inside a function and it can be asscessable within that function.It cannot be accessed outside of the function.
+if a block is anything inside any kind of loop like if-else,for,while,do-while etc.Variables declared with let and const inside a block are accessible only inside that block.
+
+
+
+
+
+
+
+
+<!-- ## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT (SwiftCart E-Commerce)
 
 
 ## Repository: Create your own public repository and submit the link.
@@ -140,4 +166,4 @@ Clicking the "Details" button on a card opens a modal with full product details:
 
 
 ### 📅 Deadline For 60 marks: 17th February, 2026 (11:59 pm ⏱️)
-- Note: There won't be any 50 or 30 marks submission deadline. Only 60 marks submission deadline. After 17th February, 2026 (11:59 pm ⏱️) no submission will be accepted.
+- Note: There won't be any 50 or 30 marks submission deadline. Only 60 marks submission deadline. After 17th February, 2026 (11:59 pm ⏱️) no submission will be accepted. -->
