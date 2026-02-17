@@ -40,9 +40,9 @@
         </div>
 
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 font-medium">
-            <li><a>Home</a></li>
-            <li><a>Products</a></li>
+          <ul class="menu menu-horizontal px-1 font-medium md:text-justify">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
             <li><a>About</a></li>
             <li><a>Contact</a></li>
           </ul>
@@ -77,7 +77,7 @@
 
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-start text-neutral-content px-6">
-        <div class="max-w-xl">
+        <div class="max-w-xl text-center md:text-left">
           <h1 class="mb-5 text-4xl md:text-5xl font-bold">Best Collection For You</h1>
           <p class="mb-5">
             Discover the latest trends in fashion, electronics and more.
@@ -153,67 +153,91 @@
     <!-- product -->
     <section class="py-16 px-6 lg:px-16">
       <h2 class="text-3xl font-bold text-center mb-10">Trending Now</h2>
+      <div id="homeProducts" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
 
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-        <!-- Product 1 -->
-        <div class="card bg-base-100 shadow-lg">
-          <figure class="px-6 pt-6">
-            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-              class="rounded-xl h-64 object-contain" />
-          </figure>
-          <div class="card-body">
-            <h3 class="font-semibold">Backpack</h3>
-            <p class="font-bold">$109.95</p>
-            <div class="card-actions justify-between">
-              <button class="btn btn-outline btn-sm">Details</button>
-              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
-                Add
-              </button>
-            </div>
-          </div>
+    <!-- MODAL -->
+    <section id="productModal" class="modal">
+      <div class="modal-box max-w-2xl">
+        <h3 id="modalTitle" class="font-bold text-lg"></h3>
+        <img id="modalImage" class="h-60 mx-auto object-contain my-4" />
+        <p id="modalDesc"></p>
+        <p class="font-bold mt-2" id="modalPrice"></p>
+        <p id="modalRating"></p>
+        <div class="modal-action">
+          <button class="btn bg-blue-800 text-white border-none">Add to Cart</button>
+          <form method="dialog"><button class="btn">Close</button></form>
         </div>
-
-        <!-- Product 2 -->
-        <div class="card bg-base-100 shadow-lg">
-          <figure class="px-6 pt-6">
-            <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="rounded-xl h-64 object-contain" />
-          </figure>
-          <div class="card-body">
-            <h3 class="font-semibold">Premium T-Shirt</h3>
-            <p class="font-bold">$22.30</p>
-            <div class="card-actions justify-between">
-              <button class="btn btn-outline btn-sm">Details</button>
-              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="card bg-base-100 shadow-lg">
-          <figure class="px-6 pt-6">
-            <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="rounded-xl h-64 object-contain" />
-          </figure>
-          <div class="card-body">
-            <h3 class="font-semibold">Cotton Jacket</h3>
-            <p class="font-bold">$55.99</p>
-            <div class="card-actions justify-between">
-              <button class="btn btn-outline btn-sm">Details</button>
-              <button class="btn bg-primaryColor text-white btn-sm border-none hover:bg-indigo-700">
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
 
+
   </main>
 
+  <footer class="bg-black text-slate-300">
+
+    <div class="max-w-7xl mx-auto px-6 py-12
+              grid gap-10
+              sm:grid-cols-2
+              lg:grid-cols-4">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="text-2xl font-bold text-blue-600 mb-3">SwiftCart</h2>
+        <p class="text-sm leading-relaxed">
+          Your one-stop shop for quality products and fast delivery.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-title text-white">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="link link-hover">Home</a></li>
+          <li><a class="link link-hover">Products</a></li>
+          <li><a class="link link-hover">About</a></li>
+          <li><a class="link link-hover">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="footer-title text-white">Support</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="link link-hover">FAQ</a></li>
+          <li><a class="link link-hover">Shipping</a></li>
+          <li><a class="link link-hover">Returns</a></li>
+          <li><a class="link link-hover">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="footer-title text-white">Newsletter</h3>
+        <p class="text-sm mb-4">
+          Get updates about new products and offers.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="Enter your email" class="input input-bordered w-full text-black" />
+          <button class="btn bg-blue-800 text-white border-none w-full sm:w-auto">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-slate-700 text-center py-4 text-sm">
+      © 2025 SwiftCart. All rights reserved.
+    </div>
+
+  </footer>
+
+
+  <script src="./script/index.js"></script>
 </body>
 
 </html>
